@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2900 3550 0    60   Input ~ 0
+3.3v_in
+Text HLabel 5650 3900 2    60   Output ~ 0
+5v_out
+$Comp
+L R R1
+U 1 1 5A8DEF83
+P 5250 3900
+AR Path="/5A8DEF6A/5A8DEF83" Ref="R1"  Part="1" 
+AR Path="/5A8DFA9D/5A8DEF83" Ref="R6"  Part="1" 
+F 0 "R1" V 5330 3900 50  0000 C CNN
+F 1 "470" V 5250 3900 50  0000 C CNN
+F 2 "" V 5180 3900 50  0001 C CNN
+F 3 "" H 5250 3900 50  0001 C CNN
+	1    5250 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L MMBT3904 Q2
+U 1 1 5A8DEFC2
+P 4100 3550
+AR Path="/5A8DEF6A/5A8DEFC2" Ref="Q2"  Part="1" 
+AR Path="/5A8DFA9D/5A8DEFC2" Ref="Q4"  Part="1" 
+F 0 "Q2" H 4300 3625 50  0000 L CNN
+F 1 "MMBT3904" H 4300 3550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4300 3475 50  0001 L CIN
+F 3 "" H 4100 3550 50  0001 L CNN
+	1    4100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT3906 Q1
+U 1 1 5A8DF007
+P 4850 3250
+AR Path="/5A8DEF6A/5A8DF007" Ref="Q1"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF007" Ref="Q3"  Part="1" 
+F 0 "Q1" H 5050 3325 50  0000 L CNN
+F 1 "MMBT3906" H 5050 3250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5050 3175 50  0001 L CIN
+F 3 "" H 4850 3250 50  0001 L CNN
+	1    4850 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5A8DF052
+P 4950 2750
+AR Path="/5A8DEF6A/5A8DF052" Ref="#PWR09"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF052" Ref="#PWR012"  Part="1" 
+F 0 "#PWR09" H 4950 2600 50  0001 C CNN
+F 1 "+5V" H 4950 2890 50  0000 C CNN
+F 2 "" H 4950 2750 50  0001 C CNN
+F 3 "" H 4950 2750 50  0001 C CNN
+	1    4950 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR010
+U 1 1 5A8DF06C
+P 3250 4050
+AR Path="/5A8DEF6A/5A8DF06C" Ref="#PWR010"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF06C" Ref="#PWR013"  Part="1" 
+F 0 "#PWR010" H 3250 3800 50  0001 C CNN
+F 1 "GNDD" H 3250 3925 50  0000 C CNN
+F 2 "" H 3250 4050 50  0001 C CNN
+F 3 "" H 3250 4050 50  0001 C CNN
+	1    3250 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR011
+U 1 1 5A8DF086
+P 4200 4050
+AR Path="/5A8DEF6A/5A8DF086" Ref="#PWR011"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF086" Ref="#PWR014"  Part="1" 
+F 0 "#PWR011" H 4200 3800 50  0001 C CNN
+F 1 "GNDD" H 4200 3925 50  0000 C CNN
+F 2 "" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A8DF0A1
+P 4600 3900
+AR Path="/5A8DEF6A/5A8DF0A1" Ref="R2"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF0A1" Ref="R7"  Part="1" 
+F 0 "R2" V 4680 3900 50  0000 C CNN
+F 1 "10k" V 4600 3900 50  0000 C CNN
+F 2 "" V 4530 3900 50  0001 C CNN
+F 3 "" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A8DF0E9
+P 4550 2900
+AR Path="/5A8DEF6A/5A8DF0E9" Ref="R3"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF0E9" Ref="R8"  Part="1" 
+F 0 "R3" V 4630 2900 50  0000 C CNN
+F 1 "100k" V 4550 2900 50  0000 C CNN
+F 2 "" V 4480 2900 50  0001 C CNN
+F 3 "" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A8DF16E
+P 3550 3550
+AR Path="/5A8DEF6A/5A8DF16E" Ref="R4"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF16E" Ref="R9"  Part="1" 
+F 0 "R4" V 3630 3550 50  0000 C CNN
+F 1 "100k" V 3550 3550 50  0000 C CNN
+F 2 "" V 3480 3550 50  0001 C CNN
+F 3 "" H 3550 3550 50  0001 C CNN
+	1    3550 3550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4950 3450 4950 3900
+Wire Wire Line
+	4950 3050 4950 2750
+Wire Wire Line
+	4700 2900 4950 2900
+Connection ~ 4950 2900
+Wire Wire Line
+	4650 3250 4200 3250
+Wire Wire Line
+	4400 2900 4200 2900
+Connection ~ 4200 3250
+Wire Wire Line
+	4450 3900 4200 3900
+Wire Wire Line
+	4200 2900 4200 3350
+Wire Wire Line
+	4200 3750 4200 4050
+Wire Wire Line
+	5100 3900 4750 3900
+Connection ~ 4950 3900
+Wire Wire Line
+	3900 3550 3700 3550
+$Comp
+L R R5
+U 1 1 5A8DF5C3
+P 3250 3800
+AR Path="/5A8DEF6A/5A8DF5C3" Ref="R5"  Part="1" 
+AR Path="/5A8DFA9D/5A8DF5C3" Ref="R10"  Part="1" 
+F 0 "R5" V 3330 3800 50  0000 C CNN
+F 1 "100k" V 3250 3800 50  0000 C CNN
+F 2 "" V 3180 3800 50  0001 C CNN
+F 3 "" H 3250 3800 50  0001 C CNN
+	1    3250 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3950 3250 4050
+Wire Wire Line
+	3250 3650 3250 3550
+Connection ~ 3250 3550
+Connection ~ 4200 3900
+Wire Wire Line
+	2900 3550 3400 3550
+Wire Wire Line
+	5400 3900 5650 3900
+$EndSCHEMATC
